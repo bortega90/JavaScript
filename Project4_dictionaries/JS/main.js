@@ -7,5 +7,5 @@ function KVP_function() { //assigning function to variables
         Sound: "Bark!"
     };
     delete pet.Age; //deleting variable property
-    document.getElementById("Dictionary").innerHTML = pet.species;
+    document.getElementById("Dictionary").innerHTML = pet.Age;
 }
