@@ -6,10 +6,10 @@ function Vote_Function(){  //voting age indicator
 }
 
 
-function wise_Fucntion() {
+function wise_Function() {
     var Age, Wisdom;
     Age = document.getElementById("Age").value;
-    Wisdom = (Age<33)? "You are not ":"You are ";
+    Wisdom = (Age>32)? "You are not ":"You are ";
     document.getElementById("New_and_This").innerHTML = Wisdom + "wise. ";
 }
 
@@ -21,4 +21,17 @@ function nest_Fun() {       //nested function
         add_one();
         return start;
     }
+}
+
+function Vehicle(Make, Model, Year, Color) {
+    this.Vehicle_Make = Make;
+    this.Vehicle_Model = Model;
+    this.Vehicle_Year = Year;
+    this.Vehicle_Color = Color;
+}
+var Jack = new Vehicle("Dodge", "Viper", 2020, "Red");
+var Emily = new Vehicle("Jeep", "Trail Hawk", 2019, "White and Black");
+var Erik = new Vehicle("Ford", "Pinto", 1971, "Mustard");
+function myFunction() {
+    document.getElementById("Keywords_and_constructors").innerHTML = "Erik drives a " + Erik.Vehicle_Color + "-colored " + Erik.Vehicle_Model + " manufactured in " + Erik.Vehicle_Year;
 }
