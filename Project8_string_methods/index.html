@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="JS/main.js"></script>
+        <meta charset = "utf-8">
+    </head>
+
+    <body>
+
+        <p id="Concatenate"></p>
+        <button onclick="full_sentence()">Click here for sentence.</button>
+
+        <p id="Slice"></p>
+        <button onclick="slice_method()">Click Here</button>
+
+        <p id="demo"></p>
+        <script>
+            //search()Method
+            let text = "Ollie is my best friend and dog daughter";
+            let position = text.search("friend");
+
+            document.getElementById("demo").innerHTML = position;
+        </script>
+
+        <p id="Numbers_to_string"></p>
+        <button onclick="string_Method()">Click here number Method</button>
+
+        <p id="Precision"></p>
+        <button onclick="precision_Method()">Click Here for toPrecision</button>
+
+        <p id="demo_1"></p>
+        <button onclick="fixed_Method()">Click Here for toFixed</button>
+
+        <p id="demo_2"></p>
+        <button onclick="value_Method()">Click for valueOf</button>
+    </body>
+
+</html>
