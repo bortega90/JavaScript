@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src=""></script>
+        <link rel="stylesheet" href="CSS/CSS_1.css">
+        <script src="JavaScript/JavaScript_2.js"></script>
+        <meta charset="UTF-8">
+    </head>
+
+    <body>
+        <h2> HTML Forms</h2>
+        <div>
+            <form name="myForm" action="/action_page.php" onsubmit="return validatForm()" method="post">
+                <label for = "fname">First name: </label><br>
+                <input type="text" id="fname" name="fname" value=""><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" value=""><br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </body>
+</html>
