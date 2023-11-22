@@ -140,7 +140,7 @@ function audio(audioURL) {
 }
 
 //this function utlilizes HTML canvas to draw win lines
-function drawWinLines(coordX1,coordY1,coordX2,coordY2) {
+function drawWinLine(coordX1,coordY1,coordX2,coordY2) {
     //this line accesses our HTML canvas element
     const canvas = document.getElementById('win-lines');
     //this line gives us access to methods and properties to use on canvas
