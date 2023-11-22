@@ -111,7 +111,7 @@ keys.addEventListener('click', (event) => {
         return;
     }
     //ensures that AC clears all inputs from the calculator screen
-    if (target.classList.contains('all clear')) {
+    if (target.classList.contains('all-clear')) {
         Calculator_Reset ();
         Update_Display();
         return;
