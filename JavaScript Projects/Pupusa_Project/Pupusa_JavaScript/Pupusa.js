@@ -12,7 +12,7 @@ function getReceipt() {
         }
     }
     if (selectedSize === "One Pupusa") {
-        sizeTotal = 2.50;
+        sizeTotal = 2;
     } else if (selectedSize === "Two Pupusas") {
         sizeTotal = 5;
     } else if (selectedSize === "Three Pupusas") {
@@ -30,7 +30,7 @@ function getReceipt() {
 function getFilling(runningTotal, text1) {
     var fillingTotal = 0;
     var selectedFilling = [];
-    var fillingArray = document.getElementsByClassName("fillings");
+    var fillingArray = document.getElementsByClassName("filling");
     for (var j = 0; j < fillingArray.length; j++) {
         if (fillingArray[j].checked) {
             selectedFilling.push(fillingArray[j].value);
